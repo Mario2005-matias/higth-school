@@ -1,0 +1,134 @@
+:root {
+    --color1: #ff0092;
+    --color2: #ffca1b;
+    --color3: #b6ff00;
+    --color4: #000e4b;
+    --color5: #ba01ff;
+    --color6: #fc1306;
+    --color7: #d00e04;
+    --color8: #a30a03;
+    --color9: #000;
+    --color10: #fff;
+    --color11: #ffae00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+footer {
+  width: 100%;
+  
+  background-color: var(--color4);
+}
+
+footer > .first {
+  width: 100%;
+  height: auto;
+  padding: 5rem 2rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color4);
+}
+
+footer > .barra {
+  width: 90%;
+  height: .1rem;
+  margin: auto;
+  background-color: #ffffff62;
+}
+
+
+footer > p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--color10);
+}
+
+footer > .first > .address {
+  width: 30rem;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  color: var(--color10);
+}
+
+footer > .first > .address > .email > p {
+  font-weight: bold;
+}
+
+footer > .first > div > img  {
+  width: 10rem;
+}
+
+
+footer > .first > .cursos,
+footer > .first > .comunidade,
+footer > .first > .midias {
+  width: 16rem;
+  height: auto;
+  margin: 3%;
+}
+
+
+footer > .first > .cursos > h3,
+footer > .first > .comunidade > h3,
+footer > .first > .midias > h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color10);
+}
+
+footer > .first > .cursos > nav,
+footer > .first > .comunidade > nav {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer > .first > .cursos > nav > a,
+footer > .first > .comunidade > nav > a {
+  color: var(--color10);
+
+  line-height: 3rem;
+}
+
+
+footer > .first > .midias > nav {
+  display: flex;
+  gap: 2rem;
+}
+
+
+footer > .first > .midias > nav > a {
+  border: 1px solid var(--color10);
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+footer > .first > .midias > nav > a > img {
+  width: 2rem;
+}
+
+@media only screen and (max-width: 529px) {
+  footer  {
+    display: block;
+  }
+}

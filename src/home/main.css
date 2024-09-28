@@ -1,0 +1,211 @@
+:root {
+  --color1: #ff0092;
+  --color2: #ffca1b;
+  --color3: #b6ff00;
+  --color4: #228dff;
+  --color5: #ba01ff;
+  --color6: #fc1306;
+  --color7: #d00e04;
+  --color8: #a30a03;
+  --color9: #000;
+  --color10: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1rem;
+}
+
+main {
+  width: 100%;
+  background: url(/myschool/assets/img/5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20rem 0 10rem 10rem;
+  width: 100%;
+  gap: 1.5rem;
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+main > .container-filter > h1 {
+  width: 70rem;
+  max-width: 90%;
+  font-weight: 700;
+  font-size: 5rem;
+  color: var(--color10);
+}
+
+main > .container-filter > h2 {
+  font-weight: normal;
+  width: 50rem;
+  line-height: 2.5rem;
+  max-width: 90%;
+  font-size: 1.8rem;
+  color: var(--color10);
+}
+
+main > .container-filter > div > button {
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: none;
+}
+
+main > .container-filter > div {
+  width: 42rem;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-turne {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color6);
+  color: var(--color10);
+}
+
+.btn-programa {
+  background-color: transparent;
+  color: var(--color2);
+}
+
+main > .container-filter > div {
+  display: flex;
+}
+
+main > .container-filter > div > .container-programa {
+  width: 25rem;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .2rem;
+}
+
+.seta {
+  width: 3rem;
+}
+
+main > .container-filter > div > .container-programa > div > button {
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+main > .container-filter > div > .container-programa > div > div {
+  background-color: var(--color2);
+  width: 95%;
+  height: 1px;
+}
+
+
+.depoimento {
+  width: 25rem;
+  height: 12rem;
+  font-size: 1.2rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  right: 10%;
+  bottom: 10%;
+  background-color: var(--color2);
+}
+
+.depoimento > div {
+  display: flex;
+  justify-content: space-between;
+}
+.depoimento > div > p {
+  font-size: 3.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.depoimento > div > .perfil{
+  width: 57%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.depoimento > div > .perfil > img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.depoimento em {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-filter {
+    padding: 0;
+    
+  padding: 20rem 0 10rem 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .depoimento {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  main > .container-filter > h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  main > .container-filter > h1 {
+    font-size: 3.4rem;
+  }
+
+  main > .container-filter > h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+
+  main > .container-filter > h1 {
+    font-size: 3.1rem;
+  }
+
+  main > .container-filter > h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}

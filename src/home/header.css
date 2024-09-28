@@ -1,0 +1,156 @@
+:root {
+  --color1: #ff0092;
+  --color2: #ffca1b;
+  --color3: #b6ff00;
+  --color4: #228dff;
+  --color5: #ba01ff;
+  --color6: #fc1306;
+  --color7: #d00e04;
+  --color8: #a30a03;
+  --color9: #000;
+  --color10: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1rem;
+}
+header {
+  z-index: 100;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.685);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
+}
+
+header > figure > img {
+  width: 80px;
+}
+header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+header > button {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background-color: var(--color6);
+  color: var(--color10);
+}
+
+header > nav > ul > li > a {
+  color: var(--color10);
+  font-weight: 500;
+}
+
+header > nav > ul > li > a:hover {
+  color: var(--color6);
+  border-radius: 1rem;
+  border: 1px solid var(--color6);
+  padding: .2rem 1rem;
+  transition: .3s;
+}
+
+header > nav > ul {
+  width: 50rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.close-menu {
+  display: none;
+}
+
+.toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-direction: column;
+  display: none;
+}
+
+.toggle > div {
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 5px;
+  background-color: var(--color10);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .toggle {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .close-menu {
+    border: none;
+    color: var(--color10);
+    background-color: transparent;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    left: 1.5rem;
+    top: 1.5rem;
+    position: fixed;
+  }
+
+  .menu-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color: var(--color6);
+    color: var(--color10);
+    opacity: 0;
+  }
+  
+  header > nav > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+  }
+
+  header > nav > ul > li > a {
+    
+  }
+  
+  header > nav > ul > li > a:hover {
+    color: var(--color10);
+    border:none;
+  }
+  
+}
+
+
+
+
